@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <label for="texte">Enter a text :</label><br>
+  <input type="text" id="texte" size="40">
+  <button onclick="inverser()">Reverse</button>
+  <p id="resultat"></p>
+
+  <script>
+    function inverser() {
+      var texte = document.getElementById("texte").value;
+      var inverse = [...texte].reverse().join("");
+      document.getElementById("resultat").textContent = inverse;
+    }
+  </script>
+</body>
+</html>
